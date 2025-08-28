@@ -1,0 +1,51 @@
+---
+layout: default
+---
+<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+
+<main class="landing">
+  <section class="hero hero--split">
+    <div class="hero__photo">
+      <img src="{{ '/slack_pic.png' | relative_url }}" alt="{{ site.name }}" loading="eager">
+    </div>
+    <div class="hero__content">
+      <h1 class="hero__name">{{ site.name }}</h1>
+      <p class="hero__tagline">{{ site.description }}</p>
+      <p class="hero__profiles">
+        <a href="https://www.linkedin.com/in/mohamad-bazzi-36b329264/" target="_blank" rel="noopener">LinkedIn</a>
+        ·
+        <a href="https://github.com/mohamadbazzy" target="_blank" rel="noopener">GitHub</a>
+      </p>
+      <div class="hero__links">
+        <a href="{{ '/projects/' | relative_url }}" class="btn">Projects</a>
+        <a href="#contact" class="btn btn--secondary">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Featured projects</h2>
+    <div class="grid">
+      {% assign items = site.projects | sort: 'date' | reverse | slice: 0, 6 %}
+      {% for item in items %}
+      <article class="card">
+        <h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+        <p>{{ item.excerpt | strip_html | truncate: 140 }}</p>
+        {% if item.repo %}<a class="link" href="{{ item.repo }}">Source</a>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      {% if site.github_username %} · <a href="https://github.com/{{ site.github_username }}">GitHub</a>{% endif %}
+      {% if site.linkedin_username %} · <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a>{% endif %}
+      {% if site.twitter_username %} · <a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>{% endif %}
+    </p>
+  </section>
+</main>
+
+

@@ -1,0 +1,84 @@
+/* Custom styles for your portfolio */
+
+/* Landing page */
+.landing .hero{padding:6rem 0;text-align:center}
+.landing .hero--split{display:grid;grid-template-columns:320px 1fr;gap:2rem;align-items:center;text-align:left}
+.landing .hero__photo img{width:100%;max-width:320px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.08);display:block}
+.landing .hero__content{max-width:720px}
+.landing .hero__name{font-size:3rem;margin:0;font-weight:800;letter-spacing:-.02em}
+.landing .hero__tagline{color:#666;margin:1rem 0 2rem}
+.landing .hero__profiles a{color:#0366d6;text-decoration:none}
+.landing .hero__profiles a:hover{text-decoration:underline}
+.landing .btn{display:inline-block;padding:.6rem 1rem;border-radius:6px;background:#111;color:#fff;text-decoration:none}
+.landing .btn--secondary{background:transparent;color:#111;border:1px solid #111}
+.landing .section{padding:3rem 0}
+.landing .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.landing .card{padding:1rem;border:1px solid #eee;border-radius:8px;background:#fff}
+.project-list li{margin:1rem 0}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Skills section */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.skill-category {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #0366d6;
+}
+
+.skill-category h4 {
+  margin: 0 0 1rem 0;
+  color: #0366d6;
+}
+
+.skill-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-category li {
+  padding: 0.25rem 0;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .landing .hero--split{grid-template-columns:1fr;text-align:center}
+  .landing .hero__content{margin:0 auto}
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

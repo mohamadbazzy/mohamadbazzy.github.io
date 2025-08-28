@@ -1,0 +1,574 @@
+/* Academic Portfolio CSS - Inspired by Hadi Salman's design */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #e1e4e8;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #0366d6;
+}
+
+.more-dropdown {
+  position: relative;
+  display: none;
+}
+
+.more-trigger {
+  cursor: pointer;
+  font-weight: 500;
+  color: #333;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2);
+  min-width: 120px;
+  display: none;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 12px 16px;
+  border-bottom: 1px solid #f6f8fa;
+}
+
+.dropdown-content a:last-child {
+  border-bottom: none;
+}
+
+.more-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Hero Section - Clean Hadi Salman Style */
+.hero-section {
+  background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+  display: grid;
+  grid-template-columns: 1fr 450px;
+  gap: 80px;
+  align-items: center;
+  padding: 100px 0;
+  margin-bottom: 0;
+  position: relative;
+  min-height: 70vh;
+}
+
+.hero-content {
+  text-align: left;
+  padding-left: 60px;
+}
+
+.hero-name {
+  font-size: 64px;
+  font-weight: 300;
+  color: #ffffff;
+  margin-bottom: 16px;
+  line-height: 1.1;
+  font-family: 'Inter', serif;
+  letter-spacing: -0.02em;
+}
+
+.hero-title {
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 50px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.hero-links {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.hero-btn {
+  background: #d73527;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  background: #c22e21;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 25px rgba(215, 53, 39, 0.3);
+}
+
+.hero-image {
+  position: relative;
+  padding-right: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  border: 12px solid #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.hero-img:hover {
+  transform: scale(1.02);
+}
+
+/* Bio section styling */
+.profile-bio-section {
+  max-width: 900px;
+  margin: 0 auto 80px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #666;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.profile-bio-section p {
+  margin-bottom: 24px;
+}
+
+/* Content sections with proper spacing */
+.content-sections {
+  background: #ffffff;
+  padding: 80px 0;
+}
+
+/* Update page-content */
+.page-content {
+  padding: 0;
+  min-height: auto;
+  background: none;
+}
+
+.page-content .wrapper {
+  max-width: 1200px;
+  padding: 0;
+}
+
+/* Profile section */
+.profile-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.profile-picture {
+  margin-bottom: 30px;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #f0f0f0;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+.profile-name {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.profile-title {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.profile-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.profile-links a {
+  color: #0366d6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.profile-links a:hover {
+  text-decoration: underline;
+}
+
+.profile-bio {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.profile-bio p {
+  margin-bottom: 20px;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 60px;
+}
+
+.section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #333;
+  border-bottom: 2px solid #e1e4e8;
+  padding-bottom: 10px;
+}
+
+/* Timeline items */
+.timeline-item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+  align-items: start;
+}
+
+.timeline-date {
+  font-weight: 600;
+  color: #666;
+  font-size: 14px;
+  text-align: right;
+  padding-top: 5px;
+}
+
+.timeline-content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.timeline-content h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.timeline-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline-content li {
+  margin-bottom: 6px;
+  color: #555;
+  position: relative;
+  padding-left: 15px;
+}
+
+.timeline-content li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #0366d6;
+  font-weight: bold;
+}
+
+/* Experience grid with company logos */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.experience-item {
+  text-align: center;
+}
+
+.company-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: block;
+  object-fit: cover;
+  border: 3px solid #e1e4e8;
+  transition: transform 0.2s ease;
+}
+
+.company-logo:hover {
+  transform: scale(1.05);
+}
+
+.experience-item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.experience-item h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.experience-item .date {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.experience-item p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid #e1e4e8;
+  padding: 30px 0;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+
+.site-footer a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* University logo in education section */
+.university-logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-top: 20px;
+  display: block;
+  object-fit: cover;
+  border: 3px solid #e1e4e8;
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.university-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Update timeline-date to center the date and logo */
+.timeline-date {
+  font-weight: 600;
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 80px 40px;
+    gap: 60px;
+  }
+  
+  .hero-content {
+    padding-left: 0;
+  }
+  
+  .hero-image {
+    padding-right: 0;
+  }
+  
+  .hero-name {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 15px;
+  }
+  
+  .site-nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  .more-dropdown {
+    display: block;
+  }
+  
+  .profile-name {
+    font-size: 36px;
+  }
+  
+  .profile-title {
+    font-size: 18px;
+  }
+  
+  .profile-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .timeline-date {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .experience-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+  }
+  
+  .company-logo {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .section h2 {
+    font-size: 28px;
+  }
+
+  .hero-section {
+    padding: 60px 20px;
+  }
+
+  .hero-name {
+    font-size: 36px;
+  }
+
+  .hero-title {
+    font-size: 18px;
+  }
+
+  .hero-links {
+    justify-content: center;
+  }
+
+  .hero-img {
+    max-width: 300px;
+    border-width: 8px;
+  }
+
+  /* Responsive adjustments for education section */
+  .university-logo {
+    width: 80px;
+    height: 80px;
+    margin-top: 15px;
+  }
+  
+  .timeline-date {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-name {
+    font-size: 28px;
+  }
+  
+  .section h2 {
+    font-size: 24px;
+  }
+}

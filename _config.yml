@@ -1,0 +1,59 @@
+# Site Settings
+title: Mohamad Bazzi
+name: Mohamad Bazzi
+email: mohamad.bazzy@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Computer Science Professional | Software Engineer | Researcher
+  Passionate about building innovative solutions and advancing technology.
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://mohamadbazzy.github.io" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name/
+  experience:
+    output: true
+    permalink: /:collection/:name/
+
+# Navigation
+header_pages:
+  - publications.md
+  - contact.md
+
+# Social Links (update with your actual profiles)
+github_username: mohamadbazzy
+linkedin_username: your-linkedin
+twitter_username: your-twitter
+
+# Google Analytics (optional)
+# google_analytics: UA-XXXXXXXX-X
+
+# Disqus Comments (optional)
+# disqus:
+#   shortname: your-disqus-shortname
+
+# Show excerpts on home page
+show_excerpts: true
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
