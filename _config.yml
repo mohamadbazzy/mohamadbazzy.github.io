@@ -29,7 +29,6 @@ collections:
 
 # Navigation
 header_pages:
-  - publications.md
   - contact.md
 
 # Social Links (update with your actual profiles)

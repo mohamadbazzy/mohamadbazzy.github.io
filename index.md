@@ -9,7 +9,7 @@ title: Home
     <p class="hero-title">Software Engineer & Computer Science Professional</p>
     
     <div class="hero-links">
-      <a href="https://scholar.google.com" target="_blank" class="hero-btn">GOOGLE SCHOLAR</a>
+      <a href="https://www.linkedin.com/in/mohamad-bazzi-36b329264/" target="_blank" class="hero-btn">LINKEDIN</a>
       <a href="https://github.com/mohamadbazzy" target="_blank" class="hero-btn">GITHUB</a>
     </div>
   </div>
