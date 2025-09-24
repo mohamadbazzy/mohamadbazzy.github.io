@@ -52,10 +52,10 @@ title: Home
       
       <div class="experience-grid">
         <div class="experience-item">
-          <img src="{{ '/UBClogo.jpg' | relative_url }}" alt="Research Intern" class="company-logo">
-          <h3>Research Intern</h3>
+          <img src="{{ '/UBClogo.jpg' | relative_url }}" alt="Research Assistant" class="company-logo">
+          <h3>Research Assistant</h3>
           <h4>University of British Columbia</h4>
-          <div class="date">Mar 2025 – Aug 2025</div>
+          <div class="date">Mar 2025 – Sep 2025</div>
           <p>
             Advised by 
             <a href="https://djsutherland.ml/" target="_blank" rel="noopener noreferrer">Dr. Danica Sutherland</a> and working closely with 
