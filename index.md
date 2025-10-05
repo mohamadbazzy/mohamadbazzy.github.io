@@ -41,7 +41,7 @@ title: Home
             <li>AI and data science concentration area</li>
             <li>Minor Mathematics</li>
             <li>President of the Financial Intelligence Club</li>
-            <li>Founding member and lecturere at AI Journey</li>
+            <li>Founding member and lecturer at AI Journey</li>
           </ul>
         </div>
       </div>
