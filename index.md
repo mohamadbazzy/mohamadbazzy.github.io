@@ -38,10 +38,10 @@ title: Home
           <h3>Bachelor of Engineering in Computer Science(CSE)</h3>
           <h4>American University of Beirut</h4>
           <ul>
-            <li>Ai and data science concentration area</li>
+            <li>AI and data science concentration area</li>
             <li>Minor Mathematics</li>
             <li>President of the Financial Intelligence Club</li>
-            <li>Head of web development Engineering Student Society</li>
+            <li>Founding member and lecturere at AI Journey</li>
           </ul>
         </div>
       </div>
