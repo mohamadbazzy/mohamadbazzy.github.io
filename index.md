@@ -88,7 +88,7 @@ title: Home
           <div class="date">Sep 2024 – Dec 2024</div>
           <p>
             Conducted research on <em>Optimizing Deep Neural Networks via Safety-Guided Preservation Sets</em> 
-            (<a href="https://arxiv.org/abs/placeholder" target="_blank" rel="noopener noreferrer">arXiv preprint</a>), 
+            (<a href="https://arxiv.org/abs/2505.00350" target="_blank" rel="noopener noreferrer">arXiv preprint</a>), 
             under the supervision of <a href="https://ammarmohanna.ai/" target="_blank" rel="noopener noreferrer">Professor Ammar Mohanna</a>. 
             The project introduced a novel compression framework that enhances generalization and reduces variance through preservation-driven quantization. 
             This work was recognized among the <strong>Top 10 papers</strong> in the IEEE Student Paper Competition.
