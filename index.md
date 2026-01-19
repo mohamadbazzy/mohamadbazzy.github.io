@@ -15,7 +15,10 @@ title: Home
   </div>
   
   <div class="hero-image">
-    <img src="{{ '/slack_pic.png' | relative_url }}" alt="Mohamad Bazzi" class="hero-img">
+    <div class="slideshow-container">
+      <img src="{{ '/slack_pic.png' | relative_url }}" alt="Mohamad Bazzi" class="hero-img slide">
+      <img src="{{ '/explaining .png' | relative_url }}" alt="Mohamad Bazzi presenting" class="hero-img slide">
+    </div>
   </div>
 </div>
 
